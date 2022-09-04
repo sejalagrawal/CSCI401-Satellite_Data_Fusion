@@ -1,0 +1,22 @@
+Motivation: 
+51 billion to zero. That is the change in tons of GHG (Greenhouse Gas) emissions per year that the world needs to reduce to prevent irreversible, catastrophic damage from climate change according to the 2021 IPCC report. Enhancing the resolution of satellite imagery benefits the study of terrestrial water, carbon, and energy cycles. Thus, our project aims to create a platform that combines data from multiple satellites to improve the regression models of variables related to Earth’s processes.
+
+Description:
+Satellite data has dramatically aided our understanding of Earth’s surface and processes. Our goal is to combine images from different satellite platforms, producing geophysical measurements at finer spatial resolution than the ones obtained from a single satellite alone. Our main objective is to develop a web-based application that allows:
+a) Data acquisition from multiple satellite databases (JavaScript, Python)
+b) Image fusion on AWS hosted resource (Python)
+c) Image visualization on a browser - webapp (WebGL)
+Design Phases:
+I) User verification and data acquisition
+- Verify user credentials when accessing different satellite databases
+- Determine satellite platform, dates and region of interests - latitude and longitude coordinates
+- Retrieve images from satellite platforms into AWS resource
+II) Image fusion and analysis
+- Implement image interpolation on AWS from images obtained in I)
+- Obtain statistical information from images (e.g., mean, standard deviation, vegetation indexes)
+- Generate single image from data fusion algorithm
+III) Data visualization
+- Implement GUI on web-browser to access user credentials, parameters, and display image resulting from II)
+- Overlay image obtained from phase II) with google map
+- Use WebGL to display the resulting image
+- Display statistical indexes as a colorbar
